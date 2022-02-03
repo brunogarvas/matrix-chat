@@ -55,7 +55,7 @@ export default function PaginaInicial() {
               function (infosDoEvento) {
                 infosDoEvento.preventDefault();
                 console.log('alguem submeteu o form');
-                roteamento.push('/chat');
+                roteamento.push(`/chat?username=${username}`);
               }
             }
             styleSheet={{
